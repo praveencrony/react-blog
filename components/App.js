@@ -1,29 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Sidebar from './Sidebar.js';
+
 class App extends React.Component {
    render(props) {
       return (
-			<div>
-                <nav className="navbar navbar-default">
-                    <div className="container-fluid">
-                        <div className="navbar-header">
-                            <a className="navbar-brand" href="#">React App</a>
-                        </div>
-                        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul className="nav navbar-nav">
-                                <li className="active"><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div className="container">
+          <div>
+            <Header/>
+            <div className="row">
+                <div className="col-md-12 pad0">
+                    <nav className="navbar navbar-default cus12">
+                        <div className="container">
+                                <ul className="nav navbar-nav">
+                                    <li><Link to="/" activeClassName="active">Home</Link></li>
+                                    <li><Link to="/about" activeClassName="active">About</Link></li>
+                                    <li><Link to="/blog" activeClassName="active">Blog</Link></li>
+                                    <li><Link to="/contact" activeClassName="active">Contact</Link></li>
+                                </ul>
 
-                    {this.props.children}
+                        </div>
+                    </nav>
                 </div>
             </div>
+
+            <div className="row">
+                <div>
+                    {this.props.children}
+                    <Sidebar/>
+                </div>
+            </div>
+            <Footer/>
+        </div>
       );
    }
 

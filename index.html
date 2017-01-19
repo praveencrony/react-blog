@@ -4,8 +4,217 @@
 	<title>React App</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
-<body>
-	<div id ="app"></div>
-      <script src = "build.js"></script>
+<body class="container cus1">
+    <div class="container cus2">
+        <div id="app"></div>
+    </div>
+
+<script src = "build.js"></script>
 </body>
 </html>
+
+
+  <style type="text/css">
+.tags span{
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  transition:  2s all;
+}
+
+.tags span:hover{
+  transform: scale(2);
+}
+/*ul li a{
+  transition: 1s all;
+}
+
+ul li a:hover{
+  color: #333232;
+  text-shadow: 2px 2px 4px #777;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 2px;
+}*/
+
+.ad
+{
+  min-height: 120px;
+  background-color:#e5e8ea;
+  border: solid 2px #e8e0e0;
+  transition: 1s all;
+}
+
+.ad:hover{
+
+  box-shadow: inset 0 0 0 10px #53a7ea;
+
+}
+
+.baloon{
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color:#CCCCCC;
+  margin-top: 120px;
+  margin-left: 10px;
+  border-radius: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  border:solid 2px #eae4e4;
+  animation: bounceIn 2s infinite;
+
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.4);
+
+  }
+  30%{
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.highlights{
+   animation: highlight 2s infinite;
+}
+
+@keyframes highlight {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+   opacity: 1;
+   background-color: #f0ad4e;
+
+  }
+}
+  .bs-callout {
+    margin: 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+}
+
+
+.bs-callout .highlight {
+    background-color: #f1f7f6;
+}
+
+.bs-callout-info {
+    background-color: #f0f7fd;
+    border-color: #54753f;
+}
+
+
+
+.bs-callout-info h4,
+.bs-callout-info a.alert-link {
+    color: #1b809e;
+}
+
+.bs-callout a.alert-link {
+    font-weight: bold;
+}
+
+.cus1{
+ color: #000000;
+}
+
+.cus2{
+  border:solid 1px #f4f4f4;
+  box-shadow: 0px 0px 5px #428bca; border-top: solid 5px #388e0c;
+}
+
+.pad0{
+ padding:0px;
+}
+
+.cus3{
+  min-height: 120px;
+  background-color:#e5e8ea;
+  border: solid 2px #e8e0e0;
+}
+
+.cus4{
+  margin-top: 40px;
+  color: #686a6b;
+}
+
+.cus5{
+  background-image:url('public/images/Blog-Banner.jpg');
+  background-position: center right;  min-height:300px;
+}
+
+.cus6{
+ background-color:#268026;
+}
+
+.cus7{
+ background-color:#252527;
+}
+
+.cus8{
+ background-color:#bb7217;
+}
+
+.cus9{
+ background-color:#840f55;
+}
+
+.cus10{
+min-height:80px;
+background-color:#388e0c;
+color:#FFFFFF;
+}
+
+.cus11{
+ margin-top:40px;
+}
+.cus12{
+    background-color: #1d416d !important;
+    border-color: #2f4a88 !important;
+    border-radius: 0px !important;
+}
+.navbar a {
+    color: #FFFFFF !important;
+}
+
+.navbar-default .navbar-nav .active a {
+    background-color: #009688! important;
+}
+
+.navbar-default .navbar-nav  a:hover {
+    background-color: #009688 !important;
+}
+.content{
+    line-height: 25px;
+    font-size: 16px;
+}
+.blog{
+    border-bottom: solid 1px #827d7d;
+    padding-bottom:10px;
+    list-style-type:none;
+}
+
+.blog h2{
+    text-transform:uppercase;
+    border-bottom: solid 1px #f4f4f4;
+}
+.blog a{
+    color:#2d2d2d;
+    }
+a.active  {
+    background-color: #009688 !important;
+}
+</style>
