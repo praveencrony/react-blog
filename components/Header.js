@@ -14,7 +14,7 @@ class Header extends React.Component {
     <div className="row">
             <div className="col-md-12 pad0">
                 <div className="col-md-4">
-                <img src="images/logo.png" style={logoStyle}/>
+                <a href="/"><img src="images/logo.png" style={logoStyle}/></a>
                 </div>
             <div className="col-md-8 ad cus3">
                 <h3 className="text-center cus4">Adsence 600 * 100 Ad here</h3>
